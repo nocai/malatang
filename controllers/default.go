@@ -1,7 +1,7 @@
 package controllers
 
 import (
-	"api"
+	// "api"
 	"github.com/astaxie/beego"
 )
 
@@ -11,7 +11,7 @@ type MainController struct {
 
 func (c *MainController) Get() {
 
-	api.GetAccessToken()
+	// api.GetAccessToken()
 
 	c.Data["Website"] = "beego.me"
 	c.Data["Email"] = "astaxie@gmail.com"
