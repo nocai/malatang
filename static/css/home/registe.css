@@ -1,0 +1,36 @@
+.username {
+    background: url(../../images/user.png) 0 50%/20px  no-repeat;
+    text-indent:30px;
+    width: 100%;
+}
+
+.submit {
+    border: 0;
+    width: 100%;
+    height: 32px;
+    color: #F2F2F2;
+    margin-bottom: 15px;
+    background-image: url(../../images/orange_bg.png);
+}
+
+.pwd{
+    background: url(../../images/pwd.png)  0 50%/20px no-repeat;
+    text-indent:30px;
+}
+
+.check-code {
+    background: url(../../images/123.png) 0 50%/20px  no-repeat;
+    text-indent:30px;
+}
+
+.invite-code {
+    background: url(../../images/invite.png) 0 50%/20px  no-repeat;
+    text-indent:30px;
+}
+
+.invite-code-btn {
+    padding: 6px 0;
+    color: #F2F2F2;
+    background-image: url(../../images/orange_bg.png);
+    border-radius: 2px;
+}

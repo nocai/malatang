@@ -1,7 +1,6 @@
 package util
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -11,7 +10,7 @@ func TestGetAppid(t *testing.T) {
 	if len(appid) == 0 {
 		t.Error("appid is nil")
 	}
-	fmt.Println("appid", appid)
+	t.Logf("appid", appid)
 }
 
 func TestGetSecret(t *testing.T) {
@@ -19,7 +18,7 @@ func TestGetSecret(t *testing.T) {
 	if len(secret) == 0 {
 		t.Error("secret is nil")
 	}
-	fmt.Println("secret", secret)
+	t.Logf("secret", secret)
 }
 
 func TestGetToken(t *testing.T) {
@@ -27,5 +26,5 @@ func TestGetToken(t *testing.T) {
 	if len(token) == 0 {
 		t.Error("token is nil")
 	}
-	fmt.Println("token", token)
+	t.Logf("token", token)
 }

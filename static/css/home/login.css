@@ -1,0 +1,12 @@
+.username {
+    background: url(../../images/user.png) 0 50%/20px  no-repeat;
+    text-indent:30px;
+}
+
+.pwd{
+    background: url(../../images/pwd.png)  0 50%/20px no-repeat;
+    text-indent:30px;
+}
+
+
+

@@ -1,0 +1,68 @@
+@import url(./reset.css);
+
+body {
+    width: auto;
+}
+
+h1 {
+    font-size: 14px;
+    height: 32px;
+    line-height: 32px;
+}
+
+form {
+    padding: 6%;
+}
+
+ul {
+    margin-bottom: 25px;
+}
+
+ul li {
+    padding: 13px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+input[type=text], input[type=password] {
+    width: 80%;
+    height: 28px;
+    border: none;
+}
+
+input[type=button], button {
+    width: 100%;
+    height: 44px;
+    line-height: 42px;
+    color: #F2F2F2;
+    background-image: url(../images/orange_bg.png);
+    border: 0;
+    border-radius: 2px;
+}
+
+.wrapper {
+    margin: 20px;
+}
+
+.float-right {
+    float: right;
+}
+
+.float-left {
+    float: left;
+}
+
+.margin-bottom-25 {
+    margin-bottom: 25px;
+}
+
+.margin-top-25 {
+    margin-top: 25px;
+}
+.color-orange {
+    color: orange;
+}
+
+.text-align-center {
+    text-align: center;
+}
+

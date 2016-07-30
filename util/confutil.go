@@ -1,31 +1,37 @@
 package util
 
 import (
-	"fmt"
-	"github.com/widuu/goini"
+	"github.com/Unknwon/goconfig"
+	"log"
+	"os"
 )
 
 const (
 	section string = "wechat"
-	path    string = "G:\\mygo\\src\\malatang\\conf\\wechat.ini"
 )
 
-var conf *goini.Config
+var conf *goconfig.ConfigFile
 
 func init() {
-	fmt.Println("path = " + path)
-	conf = goini.SetConfig(path)
+	gopath := os.Getenv("GOPATH")
+	path := gopath + "/src/malatang/conf/wechat.ini"
+
+	var err error
+	conf, err = goconfig.LoadConfigFile(path)
+	if err != nil {
+		log.Panicln(err)
+	}
+
 }
 
 func GetAppid() string {
-	fmt.Println(conf.ReadList())
-	return conf.GetValue(section, "appid")
-}
+	return conf.MustValue(section, "appid")
 
+}
 func GetSecret() string {
-	return conf.GetValue(section, "secret")
+	return conf.MustValue(section, "secret")
 }
 
 func GetToken() string {
-	return conf.GetValue(section, "token")
+	return conf.MustValue(section, "token")
 }

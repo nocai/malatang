@@ -1,14 +1,14 @@
 package api
 
 import (
-	"fmt"
 	"testing"
 )
 
 func TestGetAccessToken(t *testing.T) {
 	accessToken, err := GetAccessToken()
 	if err != nil {
-		t.Error("accessToken is nil")
+		t.Error(err)
+		return
 	}
-	fmt.Println("accessToken = " + accessToken)
+	t.Log(accessToken)
 }
